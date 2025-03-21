@@ -24,6 +24,7 @@ header img {
 .imagen-alargada {
     width: 100%; /* Ocupa todo el ancho disponible */
     overflow: hidden; /* Evita desbordamientos */
+    background: #f0f0f0; /* Fondo temporal para ver el contenedor */
 }
 
 .imagen-alargada img {
