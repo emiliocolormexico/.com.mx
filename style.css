@@ -54,6 +54,17 @@ header img {
     background: #0056b3;
 }
 
+.panel-herramientas {
+    display: none; /* Oculto por defecto */
+    background: #e9ecef;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel-herramientas.visible {
+    display: block; /* Mostrar cuando tenga la clase "visible" */
+}
+
 .main-container {
     display: flex;
     flex: 1;
