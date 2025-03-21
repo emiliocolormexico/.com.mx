@@ -26,7 +26,13 @@
     <button onclick="mostrarPanelHerramienta(4)">Herramienta 4</button>
 </div>
 
-<!-- Resto del contenido -->
+<!-- Panel de herramientas -->
+<div class="panel-herramientas" id="panelHerramientas">
+    <h2>Panel de Herramientas</h2>
+    <p>Este es el contenido del panel de herramientas. Puedes agregar aquí cualquier cosa.</p>
+    <button class="boton-estilo" onclick="ocultarPanelHerramientas()">Cerrar</button>
+</div>
+
 <div class="main-container">
     <div class="options-container">
         <h2>Selecciona una opción</h2>
@@ -47,7 +53,65 @@
 </div>
 
 <script>
-// Aquí iría el código JavaScript que ya tenías
+const opciones = {
+    1: ['A1', 'B1', 'C1'],
+    2: ['A2', 'B2', 'C2'],
+    3: ['A3', 'B3', 'C3'],
+    4: ['A4', 'B4', 'C4'],
+    5: ['A5', 'B5', 'C5']
+};
+
+function mostrarOpciones(opcion) {
+    const infoDiv = document.getElementById('info');
+    const letras = opciones[opcion].map(letra => 
+        `<li><button onclick="mostrarInfo('${letra}')">${letra}</button></li>`
+    ).join('');
+
+    infoDiv.innerHTML = `
+        <header>
+            <h2>Opciones para Opción ${opcion}</h2>
+        </header>
+        <ul class="botonera">${letras}</ul>
+        <button class="boton-estilo" onclick="regresar()">Cerrar Opciones</button>
+    `;
+}
+
+function mostrarInfo(letra) {
+    const infoDiv = document.getElementById('info');
+    const opcionActual = Object.keys(opciones).find(opcion => opciones[opcion].includes(letra)); // Encuentra la opción actual
+    infoDiv.innerHTML = `
+        <header>
+            <h2>Información sobre ${letra}</h2>
+        </header>
+        <p>Esta es la información detallada sobre ${letra}.</p>
+        <button class="boton-estilo" onclick="mostrarOpciones(${opcionActual})">Regresar</button>
+    `;
+}
+
+function regresar() {
+    const infoDiv = document.getElementById('info');
+    infoDiv.innerHTML = `
+        <header>
+            <h2>Información Detallada</h2>
+        </header>
+        <p>Selecciona una opción para ver más detalles.</p>
+    `;
+}
+
+function mostrarPanelHerramienta(herramienta) {
+    const panel = document.getElementById('panelHerramientas');
+    panel.classList.add('visible'); // Muestra el panel
+    panel.innerHTML = `
+        <h2>Herramienta ${herramienta}</h2>
+        <p>Este es el contenido específico de la Herramienta ${herramienta}.</p>
+        <button class="boton-estilo" onclick="ocultarPanelHerramientas()">Cerrar</button>
+    `;
+}
+
+function ocultarPanelHerramientas() {
+    const panel = document.getElementById('panelHerramientas');
+    panel.classList.remove('visible'); // Oculta el panel
+}
 </script>
 
 </body>
