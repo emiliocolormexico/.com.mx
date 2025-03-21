@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: #333; /* Fondo gris oscuro para toda la página */
+    background: #666; /* Fondo gris medio claro para toda la página */
     color: white; /* Texto en blanco para contrastar */
 }
 
@@ -75,20 +75,20 @@ header img {
 
 .options-container {
     width: 33.33%;
-    background: #444; /* Fondo gris oscuro para el contenedor de opciones */
+    background: #555; /* Fondo gris para el contenedor de opciones */
     padding: 20px;
     overflow-y: auto;
 }
 
 .info-container {
     width: 66.66%;
-    background: #555; /* Fondo gris para el contenedor de información */
+    background: #666; /* Fondo gris medio claro para el contenedor de información */
     padding: 20px;
     overflow-y: auto;
 }
 
 .info-container header {
-    background: #666; /* Fondo gris más claro para el encabezado de información */
+    background: #444; /* Fondo gris oscuro para el encabezado de información */
     color: white; /* Color del texto */
     padding: 5px 20px; /* Ajuste de padding: 5px (arriba/abajo) y 20px (izquierda/derecha) */
     text-align: center; /* Centrar el texto */
