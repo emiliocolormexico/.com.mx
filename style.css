@@ -20,6 +20,18 @@ header img {
     width: auto; /* Ancho automático para mantener la proporción */
 }
 
+/* Estilos para la imagen alargada */
+.imagen-alargada {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+.imagen-alargada img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Elimina espacios no deseados debajo de la imagen */
+}
+
 .toolbar {
     background: #f4f4f4;
     padding: 10px;
@@ -40,17 +52,6 @@ header img {
 
 .toolbar button:hover {
     background: #0056b3;
-}
-
-.panel-herramientas {
-    display: none; /* Oculto por defecto */
-    background: #e9ecef;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.panel-herramientas.visible {
-    display: block; /* Mostrar cuando tenga la clase "visible" */
 }
 
 .main-container {
