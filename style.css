@@ -4,10 +4,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background: #333; /* Fondo gris oscuro para toda la página */
+    color: white; /* Texto en blanco para contrastar */
 }
 
 header {
-    background: #007BFF;
+    background: #444; /* Fondo gris oscuro para el encabezado */
     color: white;
     padding: 10px;
     display: flex;
@@ -24,7 +26,7 @@ header img {
 .imagen-alargada {
     width: 100%; /* Ocupa todo el ancho disponible */
     overflow: hidden; /* Evita desbordamientos */
-    background: #f0f0f0; /* Fondo temporal para ver el contenedor */
+    background: #555; /* Fondo gris para el contenedor de la imagen */
 }
 
 .imagen-alargada img {
@@ -34,16 +36,16 @@ header img {
 }
 
 .toolbar {
-    background: #f4f4f4;
+    background: #444; /* Fondo gris oscuro para la barra de herramientas */
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #666; /* Borde gris más claro */
 }
 
 .toolbar button {
     padding: 10px;
     font-size: 16px;
-    background: #007BFF;
+    background: #007BFF; /* Color original de los botones */
     color: white;
     border: none;
     cursor: pointer;
@@ -52,14 +54,14 @@ header img {
 }
 
 .toolbar button:hover {
-    background: #0056b3;
+    background: #0056b3; /* Color hover original de los botones */
 }
 
 .panel-herramientas {
     display: none; /* Oculto por defecto */
-    background: #e9ecef;
+    background: #555; /* Fondo gris para el panel de herramientas */
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #666; /* Borde gris más claro */
 }
 
 .panel-herramientas.visible {
@@ -73,20 +75,20 @@ header img {
 
 .options-container {
     width: 33.33%;
-    background: #f4f4f4;
+    background: #444; /* Fondo gris oscuro para el contenedor de opciones */
     padding: 20px;
     overflow-y: auto;
 }
 
 .info-container {
     width: 66.66%;
-    background: white;
+    background: #555; /* Fondo gris para el contenedor de información */
     padding: 20px;
     overflow-y: auto;
 }
 
 .info-container header {
-    background: #1900ff; /* Color de fondo del encabezado */
+    background: #666; /* Fondo gris más claro para el encabezado de información */
     color: white; /* Color del texto */
     padding: 5px 20px; /* Ajuste de padding: 5px (arriba/abajo) y 20px (izquierda/derecha) */
     text-align: center; /* Centrar el texto */
@@ -107,7 +109,7 @@ header img {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background: #007BFF;
+    background: #007BFF; /* Color original de los botones */
     color: white;
     border: none;
     cursor: pointer;
@@ -115,13 +117,13 @@ header img {
 }
 
 .botonera button:hover {
-    background: #0056b3;
+    background: #0056b3; /* Color hover original de los botones */
 }
 
 .info-container button {
     padding: 10px;
     font-size: 16px;
-    background: #007BFF;
+    background: #007BFF; /* Color original de los botones */
     color: white;
     border: none;
     cursor: pointer;
@@ -129,13 +131,13 @@ header img {
 }
 
 .info-container button:hover {
-    background: #0056b3;
+    background: #0056b3; /* Color hover original de los botones */
 }
 
 .boton-estilo {
     padding: 10px;
     font-size: 16px;
-    background: #007BFF;
+    background: #007BFF; /* Color original de los botones */
     color: white;
     border: none;
     cursor: pointer;
@@ -143,5 +145,5 @@ header img {
 }
 
 .boton-estilo:hover {
-    background: #0056b3;
+    background: #0056b3; /* Color hover original de los botones */
 }
