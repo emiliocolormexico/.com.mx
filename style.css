@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+header img {
+    height: 50px; /* Altura de las imágenes */
+    width: auto; /* Ancho automático para mantener la proporción */
+}
+
+.toolbar {
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.toolbar button {
+    padding: 10px;
+    font-size: 16px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.toolbar button:hover {
+    background: #0056b3;
+}
+
+.panel-herramientas {
+    display: none; /* Oculto por defecto */
+    background: #e9ecef;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel-herramientas.visible {
+    display: block; /* Mostrar cuando tenga la clase "visible" */
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+.options-container {
+    width: 33.33%;
+    background: #f4f4f4;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.info-container {
+    width: 66.66%;
+    background: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.info-container header {
+    background: #1900ff; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 5px 20px; /* Ajuste de padding: 5px (arriba/abajo) y 20px (izquierda/derecha) */
+    text-align: center; /* Centrar el texto */
+    margin: -20px -30px 15px -30px; /* Ajustar márgenes: -20px (arriba), -30px (izquierda/derecha), 15px (abajo) */
+}
+
+.botonera {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.botonera li {
+    margin: 5px 0;
+}
+
+.botonera button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botonera button:hover {
+    background: #0056b3;
+}
+
+.info-container button {
+    padding: 10px;
+    font-size: 16px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.info-container button:hover {
+    background: #0056b3;
+}
+
+.boton-estilo {
+    padding: 10px;
+    font-size: 16px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton-estilo:hover {
+    background: #0056b3;
+}
